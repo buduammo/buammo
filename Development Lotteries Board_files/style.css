@@ -1,0 +1,178 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Apr 4, 2017, 4:20:34 PM
+    Author     : NethFm-Web
+*/
+/*
+ * Noto Sans Sinhala (Sinhala) http://www.google.com/fonts/earlyaccess
+ */
+
+
+
+.dbl-menu{
+    background: #124d84;
+    height: 127px;
+    margin-top: -40px;
+}
+.logo{
+    width: 200px
+}
+.lotto{
+    width: 234px;
+    z-index: 9999999;
+    margin-top: 30px;
+    position: absolute;
+    right: 0;
+    margin-right: 140px;
+}
+.form-back{
+    border: 1px #ccc solid; border-radius: 5px;margin-top:180px;background: #fff;
+}
+.form-back-back{
+
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px #989494;
+    height: 600px;
+    margin-top:20px;
+    border-radius:5px;
+}
+/*mobile*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .sticky{
+        top: 35px;position: relative;right: 0;bottom: 20px;
+    }
+    .media-body, .media-left, .media-right {
+        display: block;
+        vertical-align: top;
+    }
+    .lotto {
+        width: 200px;
+        z-index: 9999999;
+        margin-top: 30px;
+        position: absolute;
+        right: 0;
+        margin-right: 25px;
+    }
+    .form-back-back {
+        background-repeat:repeat;
+        box-shadow: 5px 10px #989494;
+        height: 377px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .sticky{
+        top: 35px;position: relative;right: 0;
+    }
+
+    .media-body, .media-left, .media-right {
+        display: block;
+        vertical-align: top;
+    }
+    .lotto {
+        width: 200px;
+        z-index: 9999999;
+        margin-top: 30px;
+        position: absolute;
+        right: 0;
+        margin-right: 25px;
+    }
+    .form-back-back {
+        background-repeat:no-repeat;
+        box-shadow: 5px 10px #989494;
+        height: 570px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .lotto {
+        width: 160px;
+        z-index: 9999999;
+        margin-top: 30px;
+        position: absolute;
+        right: 0;
+        margin-right: -6px;
+    }
+    .form-back{
+        border: 1px #ccc solid; border-radius: 5px;margin-top:180px;background: #fff;position: absolute;
+    }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    .lotto {
+        width: 160px;
+        z-index: 9999999;
+        margin-top: 30px;
+        position: absolute;
+        right: 0;
+        margin-right: -6px;
+    }
+    .logo{
+        width: 158px
+    }
+    /* .form-back{
+         border: 1px #ccc solid; border-radius: 5px;margin-top:100px;background: #fff;position: absolute;margin-right:15px;
+     }*/
+
+    .form-back{
+        border: 1px #ccc solid;
+        border-radius: 5px;
+        margin-top: 2px;
+        background: #00aeef;
+        position: absolute;
+        margin-right: 55px;
+        margin-bottom:5px;
+    }
+    .form-back-back{
+        margin-top:0px;
+
+    }
+
+
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        padding: 3px;
+        vertical-align: top;
+        border: transparent;
+        /* border-top: 1px solid #ddd; */
+    }
+
+    @font-face {
+        font-family: 'FM-Malithi';
+        src: url('../fonts/FM-Malithi.ttf');
+        src: url('../fonts/FM-Malithi.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .customFont{
+        font-family: 'FM-Malithi';
+    }
+}

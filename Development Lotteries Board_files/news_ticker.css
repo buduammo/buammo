@@ -1,0 +1,181 @@
+/* liScroll styles */
+
+
+/*@import url("../fonts/raleway.css");*/
+
+/*.tickeroverlay-left{
+	background-image:url('left.png');
+	display:block;
+	pointer-events:none;
+	position:absolute;
+	z-index:30;
+	height:12px;
+	width:150px;
+	top:0;
+	left:-2px;
+}
+
+.tickeroverlay-right{
+	background-image:url('right.png');
+	display:block;
+	pointer-events:none;
+	position:absolute;
+	z-index:30;
+	height:12px;
+	width:150px;
+	top:0;
+	right:-2px;
+}*/
+
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+    position: relative;
+    left: 0px;
+    top: 8px;
+    width: auto;
+    overflow: hidden;
+}
+
+.tickercontainer { /* the outer div */
+    background: rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: 53px;
+    margin : 3px 0 0 -31px;
+    padding: 0;
+    overflow: hidden;
+    border-color: transparent !important;
+    border: 1px solid;
+    border-radius: 0px 0px 0px 0px;
+    
+}
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 8px;
+    height: 40px;
+    width: auto;
+    overflow: hidden;
+}
+ul.newsticker { /* that's your list */
+    /*Transitions have been added in order set css3 transitions; and have linear easing. Changing these lines you might have unexpected results */
+    -webkit-transition: all 0s linear;
+    -moz-transition: all 0s linear;
+    -o-transition: all 0s linear;
+    transition: all 0s linear;
+    position: relative;
+    margin-left: 20px;
+    font: bold 10px Verdana;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+ul.newsticker li {
+    float: left; /* important: display inline gives incorrect results when you check for elem's width */
+    margin: 0;
+    padding-right: 15px;
+    padding-top:5px;
+    /*background: #fff;*/
+    font-family: 'Raleway';
+    font-size:12px;
+    font-weight:400;
+    line-height:20px;
+    color: #9a9a9a;
+}
+ul.newsticker a {
+    white-space: nowrap;
+    padding: 0px;
+    color: #b1000d;
+    font-family: 'Raleway';
+    font-weight:500;
+    margin: 0 50px 0 0;
+    text-decoration:none;
+}
+ul.newsticker span {
+    margin: 0 10px 0 0;
+}
+ul.newsticker span a {
+    margin: 0 10px 0 0;
+    color: #9a9a9a;
+    font-family: 'Raleway';
+    text-decoration:none;
+}
+
+#webticker{
+    float:left;
+    width:auto;
+    height:20px;
+
+}
+
+#webticker li {
+    /* important: display inline gives incorrect results when you check for elem's width */
+    margin: 0;
+    padding-left: 113px;
+    list-style-type: none;/*background: #fff;*/
+
+}
+
+
+/* +++++++++++++++++++++++++++++ */
+
+.tickercontainerInner {
+    border: 1px solid #a6a6a6;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.tickercaption {
+    color: #FFFFFF !important;
+    height: 40px !important;
+    width: 70px;
+    margin: 0px;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 3px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#484848+0,000000+100 */
+    background: #484848; /* Old browsers */
+    background: -moz-linear-gradient(top,  #484848 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #484848 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #484848 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#484848', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+.tickercaption2 {
+    font-size: 13px;
+    line-height: 15px;
+    width:100%;
+    float:left;
+    text-align:left;
+}
+.tickercaption3 {
+    font-size: 18px;
+    line-height: 15px;
+    font-weight:600;
+    width:100%;
+    float:left;
+    text-align:left;
+    text-transform:uppercase;
+}
+.padZro {
+    padding:0px;
+    margin:0px;
+}
+
+
+
+
